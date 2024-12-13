@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>国勢調査チュートリアル</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+        /*background-image: url("31104625_l.jpg"); /* 画像のパスを指定 */
+        background-size: cover; /* 画像を画面全体に表示 */
+        background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+        background-position: center; /* 画像を中央に配置 */
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(30, 30, 30, 0.9);
+        padding: 0.5rem 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .nav-logo a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+      }
+      .navbar-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar-links li {
+        margin: 0 1rem;
+      }
+      .navbar-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+      .navbar-links a:hover {
+        color: #f0a500;
+      }
+      @media (max-width: 768px) {
+        .navbar-links {
+          display: none;
+        }
+        .navbar-logo {
+          flex-grow: 1;
+          text-align: center;
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-right: 35px;
+      }
+      .background-section {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0, 1);
+        text-align: center;
+      }
+      .otoiawase_title {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0, 1);
+        font-weight: bold;
+      }
+      .messege_1 {
+        text-decoration: none;
+        font-size: 30px;
+        color: rgb(255, 255, 255, 1);
+        font-weight: bold;
+      }
+      .background-gaiyou {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-position: center;
+        background-size: cover;
+        width: 80%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+
+      概要 {
+        font-size: 20px;
+      }
+      文_1 {
+        font-size: 18px;
+        line-height: 1.8;
+        color: black;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a>しーよん</a>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="osirase.html">お問い合せ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="background-section">
+      <h1 class="otoiawase_title">ホームページ作成の目的</h1>
+    </div>
+    <div class="background-gaiyou">
+      <p id="概要">
+        金沢工業大学のプロジェクトデザイン実践の授業で作成しました。<br />
+        【メンバー】中村将彰、山崎 翔太朗、塩山 太陽、山﨑 源成、木村 亮介、東
+        明日翔<br />
+        【お問い合わせ先】 金沢工業大学　情報工学科2年　木村 亮介　Mail :
+        c1304318@st.kanazawa-it.ac.jp
+      </p>
+    </div>
+  </body>
+</html>
